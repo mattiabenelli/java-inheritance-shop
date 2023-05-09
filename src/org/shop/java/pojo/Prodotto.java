@@ -61,8 +61,8 @@ public class Prodotto {
 		return (int) (getPrezzo() * (1 + getIva() / 100f));
 	}
 	
-	@Override
-	public String toString() {
+	
+	protected String getProductString() {
 
 		return "[" + getCodice() + "] " + getNome()
 			+ "\n" + getMarca()
